@@ -1,0 +1,170 @@
+:root{
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.menu_bar{
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo{
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.logo span{
+    color: var(--color-primary);
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu_bar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+    color: var(--color-primary);
+}
+
+.dropdown_menu{
+    display: none;
+
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+    padding: 10%;
+}
+
+.fas{
+    float: right;
+    margin-left: 5px;
+    padding-top: 3px;
+}
+
+.dropdown_menu-1{
+    display: none;
+}
+
+.dropdown_menu ul li:hover .dropdown_menu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: var(--color-black);
+}
+
+.hero{
+    height: calc(100vh - 80px);
+    background-image: url(./Images/bg-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* ----------------- */
+body h1{
+    border: 4px red;
+}
+#nav-bar{
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+}
+.navigation{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    border: px black;
+    /* justify-content: space-around; */
+    
+}
+.navtext{
+    /* left: 30%; */
+    position: relative;
+    float: left;
+    margin-top: 10px;
+    border: 4px blue;
+    
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+#aboutme-section{
+    background-color: bisque;
+    width: 100%;
+    height: 250px;
+}
+#contactMe-section{
+    background-color: rgb(159, 84, 124);
+    width: 100%;
+    height: 250px;
+}
+#project-section{
+    background-color: aqua;
+    width: 100%;
+    height: 250px;
+}
+
+footer{
+    background-color: rgb(107, 22, 67);
+    width: 100%;
+    height: 150px;
+}
+
+#footer-copyright{
+    background-color: black;
+    /* width: 100%; */
+    height: 20px;
+    
+}
+#footer-copyright p{
+    font-size: 10px;
+    color: aliceblue;
+    text-align: center;
+}
